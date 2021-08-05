@@ -3,12 +3,19 @@ package br.com.alura.microservice.loja.model;
 import java.time.LocalDate;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Compra {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
   private Long pedidoId;
 
   private Integer tempoDePreparo;
@@ -16,6 +23,25 @@ public class Compra {
   private String enderecoDeDestino;
 
 	private LocalDate dataParaEntrega;
+
+	@Enumerated(EnumType.STRING)
+	private CompraState state;
+
+	public CompraState getState() {
+		return this.state;
+	}
+
+	public void setState(CompraState state) {
+		this.state = state;
+	}
+
+	public Long getId() {
+		return this.id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public Long getVoucher() {
 		return voucher;
