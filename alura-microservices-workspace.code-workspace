@@ -18,6 +18,10 @@
 		},
 		{
 			"path": "transportador"
+		},
+		{
+			"name": "zuul",
+			"path": "zuul"
 		}
 	],
 	"settings": {
