@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"name": "eureka-server",
+			"path": "eureka-server"
+		},
+		{
+			"name": "loja",
+			"path": "loja"
+		},
+		{
+			"name": "fornecedor",
+			"path": "fornecedor"
+		},
+		{
+			"name": "config-server",
+			"path": "config-server"
+		},
+		{
+			"path": "transportador"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}
