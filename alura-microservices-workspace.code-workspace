@@ -22,6 +22,10 @@
 		{
 			"name": "zuul",
 			"path": "zuul"
+		},
+		{
+			"name": "auth",
+			"path": "auth"
 		}
 	],
 	"settings": {
